@@ -1,0 +1,31 @@
+<%- include("partials/header"); -%>
+    <%if(isPosted === true){%>
+
+        <h4>
+            Your story is send
+        </h4>
+    <%}else{%>
+        <main class="main-content">
+            <h2>Share your thoughts</h2>
+            <h4>If you have a success story in which you have found your way to your dream, help us share your experience.</h4>
+            <form id="contact_form" action="/contact" method="POST">
+                <div class="form-group mx-sm-3">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" name="emailInput" class="form-control mx-sm-3" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                
+                <div class="form-group mx-sm-3">
+                    <label for="exampleFormControlTextarea1">You're story</label>
+                    <textarea class="form-control mx-sm-3" name="storyPost" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+    
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </main>
+    
+    <%}%>
+    
+   
+
+<%- include("partials/footer"); -%>

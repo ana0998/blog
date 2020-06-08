@@ -1,0 +1,120 @@
+html {
+    min-height: 100%;
+    position: relative;
+  }
+/*----------------------------NAVBAR--------------------*/
+nav#meniu{
+    text-align: center;
+    border-style: none;
+    padding: 10px;
+    margin: 0px;
+    background-color: black;
+    
+}
+nav a:hover{
+   color: darkgrey;
+}
+nav a{
+    padding: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #544738;
+    text-decoration: none;
+
+    
+}
+
+/*--------------Banner-section-------------------*/
+.banner-section img{
+    height: 380px; 
+    left: 0; 
+    position: relative; 
+    top: 0; 
+    width: 100%;
+}
+
+
+/*----------------------Home Page loyout---------*/
+.leftcolumn {
+    float: left;
+    width: 75%;
+  }
+
+.main-content .post-content{
+
+    background-color: #FFFAFA;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.main-content{
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+.about-me-content, .share-love{
+    background-color: #FFFAFA;
+}
+
+.far.fa-heart:hover{
+    color: crimson;
+    border-color: crimson;
+}
+
+.about-me-content img{
+   transform: rotate(4deg);
+   border: 4px solid white;
+   height: 150px;
+   margin: 0 50px;
+   width: 150px;
+}
+
+
+
+
+footer {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 20px;
+	background-color: #FFFAFA;
+}
+
+/*---------CONTACT PAGE-------*/
+
+#contact_form{
+    margin: 60px;
+    background-color: #FFFAFA;
+}
+
+/*------Paragrafe ---*/
+.post-content
+{
+    text-align: center;
+}
+
+.post-content p{
+    white-space: pre-wrap;
+}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn, .post-content img {
+      width: 100%;
+      padding: 0;
+    }
+  }
+

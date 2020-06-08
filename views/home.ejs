@@ -1,0 +1,48 @@
+<%- include("partials/header"); -%>
+    <main class="main-content row">
+        <%if(session!=undefined){%>
+            <h5 style="position: absolute;right: 50%;">Welcome, <%= session%></h5>
+        <%}%>
+        <div class="leftcolumn">
+
+            <% newPosts.forEach(post => {%>
+                <section class="post-content">
+                    <h2>
+                        <%=post.Title%>
+                    </h2>
+                    <img src="/images/<%=post.image%>" alt="no-image" width="560" height="315">
+                    <h6>
+                        <%=post.date%>
+                    </h6>
+                    <p>
+                        <%=post.Content.substring(0, 100) + " ..."%>
+                        <a href="/posts/<%=post._id%>">Read More</a>
+                    </p>
+                </section>
+            <%});%>
+                
+
+        </div>
+
+        <div class="rightcolumn">
+            <section class="about-me-content">
+                <h2>About me</h2>
+                <img src="/images/me.png" alt="">
+                <p>
+                    My name is Ana, I'm from Suceava and I am a 3rd year student at the Faculty of Automation and Computers in Iasi.
+                </p>
+            </section>
+
+            <section class="share-love">
+                <h2>Share Love</h2>
+                <i class="far fa-heart"></i>
+                <i class="far fa-heart"></i>
+                <i class="far fa-heart"></i>
+                <i class="far fa-heart"></i>
+
+            </section>
+        </div>
+                
+            
+    </main>
+<%- include("partials/footer"); -%>

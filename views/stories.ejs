@@ -1,0 +1,25 @@
+<%- include("partials/header"); -%>
+
+    <div class=row>
+
+        <% results.forEach(story => {%>
+
+            <div class="col-sm-6">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Success Story</h5>
+                      <p class="card-text"><%=story.storyContent.substring(0, 100) + " ..."%></p>
+                      <a href="/story/<%=story._id%>" class="btn btn-primary">Read more</a>
+                    </div>
+                  </div>
+            </div>
+            
+            
+        <%});%>
+    
+    </div>
+    
+
+
+
+<%- include("partials/footer"); -%>

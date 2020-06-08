@@ -1,0 +1,23 @@
+<%- include("partials/header"); -%>
+    <main class="main-content">
+        <%if(session!=undefined){%>
+            <h5 style="position: absolute;right: 0px;">Welcome, <%= session%></h5>
+        <%}%>
+       
+        <h2>Compose a Post</h2>
+
+        
+        <form action="/" method="POST">
+            <div class="form-group">
+                <label>Title</label>
+                <input class="form-control" type="text" name="postTitle">
+                <label>Post</label>
+                <textarea class="form-control" name="postBody" rows="5" cols="30"></textarea>
+                <label>Upload an image</label>
+                <input type="text" name="imageUrl">
+            </div>
+            <button class="btn btn-primary" type="submit" name="button">Publish</button>
+        </form>
+    </main>
+
+<%- include("partials/footer"); -%>
